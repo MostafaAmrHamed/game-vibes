@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 import Navbar from "./Pages/Navbar/Navbar";
 function App() {
   return (
-    <div>
+    <div className="container mx-auto font-Oswald">
       <Navbar />
       <Home />
     </div>
