@@ -1,6 +1,6 @@
 import React from "react";
 import Pic1 from "../../Assets/Images/character 1.png";
-import TopList from "./Components/TopList";
+import { TopList, SearchBar, GameComponent } from "./Components/index";
 const Home = () => {
   return (
     <div className="">
@@ -22,6 +22,14 @@ const Home = () => {
 
       {/* Top Games */}
       <TopList />
+
+      {/* Search bar */}
+      <SearchBar />
+
+      {/* Game List */}
+      <div className="mt-12">
+        <GameComponent />
+      </div>
     </div>
   );
 };
