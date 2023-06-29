@@ -27,7 +27,11 @@ const Home = () => {
       <SearchBar />
 
       {/* Game List */}
-      <div className="mt-12">
+      <div className="mt-12 mb-5 flex flex-wrap justify-around gap-4">
+        <GameComponent />
+        <GameComponent />
+        <GameComponent />
+        <GameComponent />
         <GameComponent />
       </div>
     </div>
