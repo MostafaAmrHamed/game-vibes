@@ -7,7 +7,11 @@ const SearchBar = () => {
       <div className="text-lg lg:text-xl flex gap-10">
         <div className="flex">
           <p>Platform:</p>
-          <select name="" id="" className="text-primary-3 bg-transparent ">
+          <select
+            name=""
+            id=""
+            className="text-primary-3 bg-transparent focus:outline-none"
+          >
             <option value="">All platform</option>
             <option value="">Option...</option>
             <option value="">Option...</option>
@@ -18,7 +22,11 @@ const SearchBar = () => {
         </div>
         <div className="flex">
           <p>Genre/Tag:</p>
-          <select name="" id="" className="text-primary-3 bg-transparent ">
+          <select
+            name=""
+            id=""
+            className="text-primary-3 bg-transparent focus:outline-none"
+          >
             <option value="">Shooter</option>
             <option value="">Option...</option>
             <option value="">Option...</option>
@@ -29,7 +37,11 @@ const SearchBar = () => {
         </div>
         <div className="flex">
           <p>Sort By:</p>
-          <select name="" id="" className="text-primary-3 bg-transparent ">
+          <select
+            name=""
+            id=""
+            className="text-primary-3 bg-transparent focus:outline-none"
+          >
             <option value="">Relevance</option>
             <option value="">Option...</option>
             <option value="">Option...</option>

@@ -1,6 +1,7 @@
 import React from "react";
 import Pic1 from "../../Assets/Images/character 1.png";
 import { TopList, SearchBar, GameComponent } from "./Components/index";
+import Popup from "./Components/Popup";
 const Home = () => {
   return (
     <div className="">
@@ -27,13 +28,15 @@ const Home = () => {
       <SearchBar />
 
       {/* Game List */}
-      <div className="mt-12 mb-5 flex flex-wrap justify-around gap-4">
+      <div className="mt-12 mb-5 flex flex-wrap justify-around gap-5">
         <GameComponent />
         <GameComponent />
         <GameComponent />
         <GameComponent />
         <GameComponent />
       </div>
+
+      <Popup />
     </div>
   );
 };

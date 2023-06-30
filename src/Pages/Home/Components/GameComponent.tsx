@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import { BsWindows } from "react-icons/bs";
 const GameComponent = () => {
+  const [favorite, setFavorite] = useState<boolean>(false);
   return (
     <div
       className="w-[365px] h-fit bg-primary-1 
-    rounded-md transition-transform duration-200 hover:scale-105 hover:cursor-pointer"
+    rounded-md transition-transform duration-200 hover:scale-105 hover:cursor-pointer select-none"
     >
       <img
         src={"https://www.freetogame.com/g/516/thumbnail.jpg"}
         alt="Thumbnail"
-        className="rounded-t-md rounded-b-lg shadow-lg"
+        className="rounded-t-md rounded-b-lg shadow-xl"
       />
 
       <div className="p-5 flex justify-between justify-items-center">
         <p className="text-xl">PUBG: BATTLEGROUNDS</p>
-        {false ? <MdFavorite size={28} /> : <MdFavoriteBorder size={28} />}
+        {favorite ? (
+          <MdFavorite
+            size={28}
+            onClick={() => {
+              setFavorite(!favorite);
+            }}
+          />
+        ) : (
+          <MdFavoriteBorder
+            size={28}
+            onClick={() => {
+              setFavorite(!favorite);
+            }}
+          />
+        )}
       </div>
 
       <div className="p-5 grid grid-cols-3">
