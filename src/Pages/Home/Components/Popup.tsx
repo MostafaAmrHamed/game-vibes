@@ -4,8 +4,9 @@ import { RiCloseLine } from "react-icons/ri";
 
 const Popup = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-0 bg-slate-500 opacity-50 overflow-hidden">
-      <div className="absolute bg-primary-2 translate-x-1/2 translate-y-1/2 rounded-lg">
+    <div>
+      <div className="fixed top-0 left-0 right-0 bottom-0 bg-primary-2 opacity-50"></div>
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-primary-2 rounded-lg">
         <div className="absolute right-5 top-2">
           <RiCloseLine
             size={32}
@@ -14,7 +15,7 @@ const Popup = () => {
         </div>
         <div className="flex gap-5 p-5">
           {/* Left Side */}
-          <div className="">
+          <div>
             <img
               src={"https://www.freetogame.com/g/516/thumbnail.jpg"}
               alt="Thumbnail"
@@ -22,9 +23,9 @@ const Popup = () => {
               height={200}
               width={300}
             />
-            <div className="pt-2 grid grid-cols-3 justify-items-stretch">
+            <div className="pt-4 px-1 grid grid-cols-3 justify-items-stretch">
               <div className="col-span-2 justify-start flex gap-1">
-                <p className="text-lg bg-primary-1 text-primary-2 font-light px-2  rounded-md ">
+                <p className="text-lg bg-primary-1 text-primary-2 px-2  rounded-md ">
                   Shooter
                 </p>
               </div>
