@@ -2,15 +2,26 @@ import React from "react";
 import { BsWindows } from "react-icons/bs";
 import { RiCloseLine } from "react-icons/ri";
 
-const Popup = () => {
+type popup = {
+  setDetails: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const Popup = ({ setDetails }: popup) => {
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 bottom-0 bg-primary-2 opacity-50"></div>
+      <div
+        className="fixed top-0 left-0 right-0 bottom-0 bg-primary-2 opacity-50"
+        onClick={() => {
+          setDetails(false);
+        }}
+      ></div>
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-primary-2 rounded-lg">
         <div className="absolute right-5 top-2">
           <RiCloseLine
             size={32}
             className=" text-white cursor-pointer hover:scale-110"
+            onClick={() => {
+              setDetails(false);
+            }}
           />
         </div>
         <div className="flex gap-5 p-5">

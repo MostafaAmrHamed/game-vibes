@@ -1,7 +1,7 @@
 import React from "react";
 import Pic1 from "../../Assets/Images/character 1.png";
 import { TopList, SearchBar, GameComponent } from "./Components/index";
-import Popup from "./Components/Popup";
+
 const Home = () => {
   return (
     <div className="">
@@ -35,8 +35,6 @@ const Home = () => {
         <GameComponent />
         <GameComponent />
       </div>
-
-      <Popup />
     </div>
   );
 };
